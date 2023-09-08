@@ -11,6 +11,18 @@ Recipe.init({
 
     }
 
+    // ingredients: {
+    //     type: DataTypes.STRING,
+
+    //chicken soup
+    // meat, vegetable, spices, (all are arrays???)
+    // spices
+        //pepper
+            //1 tsp
+
+    //instructions: (array of steps objects)
+
+    // },
 
 
 })
