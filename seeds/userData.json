@@ -5,7 +5,7 @@
     "lastName": "Azar",
     "email": "sal@hotmail.com",
     "password": "password12345",
-    "createdRecipes": ["1","2"]
+    "createdRecipesIds": ["1","2"]
   },
   {
     "username": "Lernantino",
@@ -21,7 +21,7 @@
     "lastName": "Miko",
     "email": "amiko2k20@aol.com",
     "password": "password12345",
-    "createdRecipes": ["5"]
+    "createdRecipesIds": ["5"]
   },
   {
     "username": "Jordan",
@@ -29,7 +29,7 @@
     "lastName": "Peters",
     "email": "jordan99@msn.com",
     "password": "password12345",
-    "createdRecipes": ["6"]
+    "createdRecipesIds": ["6"]
   },
   {
     "username": "Blake",
@@ -37,7 +37,7 @@
     "lastName": "Brossard",
     "email": "the_blake@yahoo.com",
     "password": "password12345",
-    "createdRecipes": []
+    "createdRecipesIds": []
   }
 ]
 

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Spaghetti and Meatballs",
+        "description": "Classic Italian dish",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Pasta Sauce",
+                "ingredientAmount": "1 32oz jar"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Spaghetti Noodles",
+                "ingredientAmount": ""
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Frozen Meatballs",
+                "ingredientAmount": ""
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Boil noodles"
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Heat sauce"
+            },
+            {
+                "stepNumber": "3",
+                "stepText": "Thaw meatballs in sauce. Mix and serve"
+            }
+        ],
+        "createdUserId": "1"
+    }
+]

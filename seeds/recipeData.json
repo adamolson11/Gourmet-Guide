@@ -33,7 +33,7 @@
                 "stepText": "Thaw meatballs in sauce. Mix and serve"
             }
         ],
-        "createdUserID": "1"
+        "createdUserId": "1"
     },
     {
         "name": "Chicken Salad",
@@ -69,7 +69,7 @@
                 "stepText": "Mix ingredients in bowl"
             }
         ],
-        "createdUserID": "1"
+        "createdUserId": "1"
     },
     {
         "name": "Meatloaf",
@@ -118,7 +118,7 @@
                 "stepText": "Let cool for 10 minutes then serve"
             }
         ],
-        "createdUserID": "2"
+        "createdUserId": "2"
     },
     {
         "name": "Tacos",
@@ -173,7 +173,7 @@
                 "stepText": "Allow guests to add their own toppings to the tortillas"
             }
         ],
-        "createdUserID": "2"
+        "createdUserId": "2"
     },
     {
         "name": "Mac and Cheese",
@@ -200,7 +200,7 @@
                 "stepText": "Cut the brick into smaller cubes, then stir into the hot noodles until cheese is melted"
             }
         ],
-        "createdUserID": "3"
+        "createdUserId": "3"
     },
     {
         "name": "Applesauce",
@@ -246,9 +246,9 @@
             },
             {
                 "stepNumber": "5",
-                "stepText": "Remove from heat and"
+                "stepText": "Remove from heat and serve"
             }
         ],
-        "createdUserID": "4"
+        "createdUserId": "4"
     }
 ]

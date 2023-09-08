@@ -45,10 +45,10 @@ User.init(
         len: [8],
       },
     },
-    createdRecipesIds: {
-      type: DataTypes.JSON,
-      unique: true
-    }
+    // createdRecipesIds: {
+    //   type: DataTypes.JSON,
+    //   unique: true
+    // } we may not need this, as new users will not have any by default. It can be added when a user submits a new recipe, if we add that functionality
   },
   {
     hooks: {
