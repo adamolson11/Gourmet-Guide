@@ -16,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    userName: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -45,6 +45,10 @@ User.init(
         len: [8],
       },
     },
+    createdRecipesIds: {
+      type: DataTypes.JSON,
+      unique: true
+    }
   },
   {
     hooks: {

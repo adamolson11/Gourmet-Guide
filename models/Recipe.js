@@ -19,11 +19,13 @@ Recipe.init({
       },
     ingredients: {
         type: DataTypes.JSON,
+        allowNull: false,
     },
     steps: {
         type: DataTypes.JSON,
+        allowNull: false,
     },
-    submittedUserId: {
+    createdUserId: {
         type: DataTypes.INTEGER,
         references: {
             model: 'user',
@@ -38,6 +40,8 @@ Recipe.init({
     //     type: DataTypes.STRING,
     //      allowNull: false,
 
+    //DataTypes.JSON will send and return the objects just find, good call Noah - AB
+
 
 
     //chicken soup
@@ -46,11 +50,13 @@ Recipe.init({
     //pepper
     //1 tsp
 
+    //we could implement this, but it would be more work to traverse two sets of arrays of objects. We could probably get away with adding it later if we decide it's worth it. For now I kept it simple - AB
+
     //instructions: (array of steps objects)
 
     // },
 
-    date_created: {
+    dateCreated: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: DataTypes.NOW,
@@ -60,8 +66,8 @@ Recipe.init({
 {
     hooks: {
         beforeCreate:(recipe) => {
-            const shortName = Recipe.name.split(' ').join('-').toLowerCase()
-            Recipe.shortName= shortName
+            const shortName = recipe.name.split(' ').join('-').toLowerCase()
+            recipe.shortName= shortName
         }
     },
     sequelize,
@@ -74,3 +80,5 @@ Recipe.init({
 
 
 module.exports = Recipe
+
+//if we add the ability to create a recipe, we will need to add functionality to auto assign the createdUserId value

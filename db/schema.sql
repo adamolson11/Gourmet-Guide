@@ -1,2 +1,4 @@
-DROP DATABASE IF EXISTS user_db;
-CREATE DATABASE user_db;
+DROP DATABASE IF EXISTS gourmet_guide_db;
+CREATE DATABASE gourmet_guide_db;
+
+USE DATABASE gourmet_guide_db;
