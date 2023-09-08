@@ -25,13 +25,13 @@ Recipe.init({
         type: DataTypes.JSON,
         allowNull: false,
     },
-    // createdUserId: {
-    //     type: DataTypes.INTEGER,
-    //     references: {
-    //         model: 'user',
-    //         key: 'id'
-    //     }
-    // },
+    createdUserId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id'
+        }
+    },
 
 
       
@@ -64,12 +64,13 @@ Recipe.init({
 
 }, 
 {
-    // hooks: {
-    //     beforeCreate:(recipe) => {
-    //         const shortName = recipe.name.split(' ').join('-').toLowerCase()
-    //         recipe.shortName= shortName
-    //     }
-    // },
+    hooks: {
+        beforeCreate:async (recipe) => {
+            const shortName = await recipe.name.split(' ').join('-').toLowerCase()
+            recipe.shortName = shortName
+            return recipe
+        }
+    },
     sequelize,
     freezeTableName: true,
     modelName: 'recipe',
