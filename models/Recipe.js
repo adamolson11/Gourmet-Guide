@@ -10,16 +10,27 @@ Recipe.init({
         primaryKey: true,
         autoIncrement: true,
     },
-
     name: {
         type: DataTypes.STRING,
         allowNull: false,
-
     },
-
     description: {
         type: DataTypes.STRING,
       },
+    ingredients: {
+        type: DataTypes.JSON,
+    },
+    steps: {
+        type: DataTypes.JSON,
+    },
+    submittedUserId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id'
+        }
+    },
+
 
       
     //should ingredients and instructions be separate models? 
@@ -45,8 +56,12 @@ Recipe.init({
         defaultValue: DataTypes.NOW,
     },
 
-
-
+}, 
+{
+  
+    sequelize,
+    freezeTableName: true,
+    modelName: 'recipe',
 })
 
 
