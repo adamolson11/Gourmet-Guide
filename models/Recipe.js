@@ -58,7 +58,12 @@ Recipe.init({
 
 }, 
 {
-  
+    hooks: {
+        beforeCreate:(recipe) => {
+            const shortName = Recipe.name.split(' ').join('-').toLowerCase()
+            Recipe.shortName= shortName
+        }
+    },
     sequelize,
     freezeTableName: true,
     modelName: 'recipe',
