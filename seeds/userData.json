@@ -1,28 +1,43 @@
 [
   {
-    "name": "Sal",
+    "username": "Sal",
+    "firstName": "Sal",
+    "lastName": "Azar",
     "email": "sal@hotmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "createdRecipesIds": ["1","2"]
   },
   {
-    "name": "Lernantino",
+    "username": "Lernantino",
+    "firstName": "Leran",
+    "lastName": "Tino",
     "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "createdRecipesIds": ["3","4"]
   },
   {
-    "name": "Amiko",
+    "username": "Amiko",
+    "firstName": "Amiko",
+    "lastName": "Miko",
     "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "password": "password12345",
+    "createdRecipesIds": ["5"]
   },
   {
-    "name": "Jordan",
+    "username": "Jordan",
+    "firstName": "Jordan",
+    "lastName": "Peters",
     "email": "jordan99@msn.com",
-    "password": "password12345"
+    "password": "password12345",
+    "createdRecipesIds": ["6"]
   },
   {
-    "name": "Blake",
+    "username": "Blake",
+    "firstName": "Blake",
+    "lastName": "Brossard",
     "email": "the_blake@yahoo.com",
-    "password": "password12345"
+    "password": "password12345",
+    "createdRecipesIds": []
   }
 ]
 

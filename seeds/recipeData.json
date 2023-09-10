@@ -1,0 +1,254 @@
+[
+    {
+        "name": "Spaghetti and Meatballs",
+        "description": "Classic Italian dish",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Pasta Sauce",
+                "ingredientAmount": "1 32oz jar"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Spaghetti Noodles",
+                "ingredientAmount": ""
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Frozen Meatballs",
+                "ingredientAmount": ""
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Boil noodles"
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Heat sauce"
+            },
+            {
+                "stepNumber": "3",
+                "stepText": "Thaw meatballs in sauce. Mix and serve"
+            }
+        ],
+        "createdUserId": "1"
+    },
+    {
+        "name": "Chicken Salad",
+        "description": "A creamy chicken salad with vegetables",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Canned Chicken",
+                "ingredientAmount": "(2) 5oz cans"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Mayo",
+                "ingredientAmount": "1 C"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Cranberries",
+                "ingredientAmount": "1 C"
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Drain chicken of juice"
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Slice celery to desired thinness"
+            },
+            {
+                "stepNumber": "3",
+                "stepText": "Mix ingredients in bowl"
+            }
+        ],
+        "createdUserId": "1"
+    },
+    {
+        "name": "Meatloaf",
+        "description": "A load made of meat",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Beef",
+                "ingredientAmount": "2 pounds"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Pork",
+                "ingredientAmount": "1 pound"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Brown Sugar",
+                "ingredientAmount": "2 C"
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Ketchup",
+                "ingredientAmount": "1 C"
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Mix brown sugar, beef and pork in a bowl"
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Form into a loaf shape and put it on a baking sheet"
+            },
+            {
+                "stepNumber": "3",
+                "stepText": "Cook at 350 degrees for 30 minutes"
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "Remove from oven, top with ketchup, return to the oven and cook for 15 more minutes"
+            },
+            {
+                "stepNumber": "",
+                "stepText": "Let cool for 10 minutes then serve"
+            }
+        ],
+        "createdUserId": "2"
+    },
+    {
+        "name": "Tacos",
+        "description": "A tortilla and meat delight",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Ground Beef",
+                "ingredientAmount": "2 pounds"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Tortillas",
+                "ingredientAmount": "Pack of 10"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Onion",
+                "ingredientAmount": "1 C, diced"
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Lettuce",
+                "ingredientAmount": "2 C, shredded "
+            },
+            {
+                "ingredientNumber": "5",
+                "ingredientName": "Black Olives, sliced",
+                "ingredientAmount": "1 5oz can"
+            },
+            {
+                "ingredientNumber": "6",
+                "ingredientName": "Taco Sauce",
+                "ingredientAmount": "16oz jar"
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Cook the beef in a pan until browned"
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Prepare vegetables in separate bowls with serving spoons"
+            },
+            {
+                "stepNumber": "3",
+                "stepText": "Put beef in a serving bowl and tortillas on a plate",
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "Allow guests to add their own toppings to the tortillas"
+            }
+        ],
+        "createdUserId": "2"
+    },
+    {
+        "name": "Mac and Cheese",
+        "description": "A comfort food staple",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Macaroni Noodles",
+                "ingredientAmount": "1 16oz Box"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Velveeta Cheese",
+                "ingredientAmount": "32oz Brick"
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Boil noodles as directed on package, plus two minutes. Drain."
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Cut the brick into smaller cubes, then stir into the hot noodles until cheese is melted"
+            }
+        ],
+        "createdUserId": "3"
+    },
+    {
+        "name": "Applesauce",
+        "description": "Smooth sauce made of apples",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Apples",
+                "ingredientAmount": "3 pounds"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Sugar",
+                "ingredientAmount": "1 pound"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Cinnamon",
+                "ingredientAmount": "1 Tbsp"
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Butter",
+                "ingredientAmount": "1 stick"
+            }
+        ],
+        "steps": [
+            {
+                "stepNumber": "1",
+                "stepText": "Slice apples and remove cores and stems"
+            },
+            {
+                "stepNumber": "2",
+                "stepText": "Melt butter in a pan. Add sliced apples."
+            },
+            {
+                "stepNumber": "3",
+                "stepText": "Cook apples until soft, approx. 15 minutes"
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "Add sugar and cinnamon. Stir until it dissolves"
+            },
+            {
+                "stepNumber": "5",
+                "stepText": "Remove from heat and serve"
+            }
+        ],
+        "createdUserId": "4"
+    }
+]
