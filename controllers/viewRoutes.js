@@ -27,7 +27,7 @@ router.get('/recipes', async (req, res) => {
       raw: true
     })
     console.log(allRecipes)
-    res.render('all-recipes', { allRecipes })
+    res.render('all-recipes', { allRecipes, logged_in: req.session.logged_in })
   } catch (err) {
     res.status(500).json(err)
   }
@@ -61,7 +61,7 @@ router.get('/profile', async (req, res) => {
   try {
     console.log(req.session.user_id)
     let user = await User.findByPk(req.session.user_id, {
-      include: [{ model: Recipe }]
+      include: [{ model: Recipe }],
     })
     user = user.get({ plain: true })
     res.render('profile', user)
