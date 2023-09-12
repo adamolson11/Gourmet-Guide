@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Recipe } = require('../models');
+const { findByPk } = require('../models/User');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -56,5 +57,19 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+
+router.get('/profile', async (req, res) => {
+  try {
+    const user = await User.findByPk(req.session.user_id, {
+      include: [ {model: Recipe} ],
+      raw: true,
+    }) 
+    res.render('profile',user)
+   } catch (err) {
+      res.status(500).json(err);
+    }
+  })
+
 
 module.exports = router;
