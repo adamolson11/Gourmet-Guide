@@ -1,1 +1,9 @@
 <h2>{{username}}</h2>
+{{#each recipes}}
+<div>
+  <a href="/recipe/{{this.id}}">
+    <h3>{{this.name}}</h3>
+  </a>
+  <p>{{this.description}}</p>
+</div>
+{{/each}}

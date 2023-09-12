@@ -36,12 +36,10 @@ router.get('/recipes', async (req, res) => {
 router.get('/recipe/:id', async (req, res) => {
   let id = req.params.id
   try {
-    const recipe = await Recipe.findByPk(id, {
-      // include: [{
-      //   model: User
-      // }],
-      raw: true
+    let recipe = await Recipe.findByPk(id, {
+      include: [{ model: User }]
     })
+    recipe = recipe.get({ plain: true })
     console.log(recipe)
     res.render('recipe', recipe)
   } catch (err) {
@@ -66,7 +64,6 @@ router.get('/profile', async (req, res) => {
       include: [{ model: Recipe }]
     })
     user = user.get({ plain: true })
-    console.log(user)
     res.render('profile', user)
   } catch (err) {
     res.status(500).json(err);
