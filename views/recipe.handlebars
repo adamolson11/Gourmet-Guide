@@ -1,0 +1,14 @@
+<h1>{{name}}</h1>
+<p>Posted by {{createdUserId}}</p>
+<p>{{description}}</p>
+<ul>
+  {{#each ingredients}}
+  <li>{{this.ingredientName}} - {{this.ingredientAmount}}</li>
+  {{/each}}
+</ul>
+<ul>
+  {{#each steps}}
+<li>{{this.stepNumber}} - {{this.stepText}}</li>
+{{/each}}
+</ul>
+

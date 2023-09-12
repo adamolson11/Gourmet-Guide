@@ -32,6 +32,22 @@ router.get('/recipes', async (req, res) => {
   }
 })
 
+router.get('/recipe/:id', async (req, res) => {
+  let id = req.params.id
+  try {
+    const recipe = await Recipe.findByPk(id, {
+      // include: [{
+      //   model: User
+      // }],
+      raw: true
+    })
+    console.log(recipe)
+    res.render('recipe', recipe)
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
