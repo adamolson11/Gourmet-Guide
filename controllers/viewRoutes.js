@@ -61,15 +61,17 @@ router.get('/login', (req, res) => {
 
 router.get('/profile', async (req, res) => {
   try {
-    const user = await User.findByPk(req.session.user_id, {
-      include: [ {model: Recipe} ],
-      raw: true,
-    }) 
-    res.render('profile',user)
-   } catch (err) {
-      res.status(500).json(err);
-    }
-  })
+    console.log(req.session.user_id)
+    let user = await User.findByPk(req.session.user_id, {
+      include: [{ model: Recipe }]
+    })
+    user = user.get({ plain: true })
+    console.log(user)
+    res.render('profile', user)
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
 
 
 module.exports = router;
