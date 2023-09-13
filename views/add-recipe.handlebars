@@ -1,6 +1,6 @@
 <div class="container row mx-auto col-10 col-md-8 col-lg-6">
   <h2 class="text-center mb-4">Add your own recipe below</h2>
-  <div class="align-items-center">
+  <div class="align-items-center mb-5">
     <form>
       <div class="mb-3">
         <label for="recipeName" class="form-label">Enter the name of your dish</label>
@@ -31,15 +31,17 @@
         
       </div>
 
-      <div class="mb-3">
+      <div id="stepDiv" class="mb-3">
         <label for="steps" class="form-label">Add the steps to create this dish</label>
         <input type="text" class="form-control" id="steps">
-        <button type="button" class="btn btn-primary btn-sm m-1">+ step</button>
       </div>
+        <button id="stepsBtn" type="button" class="btn btn-primary btn-sm m-1">+ step</button>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
   </div>
 </div>
 
-<script src="/addRecipe.js"></script>
+<script src="/js/addRecipe.js"></script>
