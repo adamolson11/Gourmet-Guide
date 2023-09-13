@@ -1,10 +1,18 @@
-{{#each users as |user| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{user.name}}</h2>
+<main class="container container-fluid mt-5">
+ 
+  {{#each users as |user| }}
+  <div class="row align-center mb-5">
+    <div class="col-md-6">
+      <h2>{{{get_emoji}}} {{user.name}}</h2>
+    </div>
+    <div class="col-md-6">
+      <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
-  </div>
+  {{/each}}
+</main>
+
+<div class="text-center mt-5">
+  <h1 class="text-white">Welcome to Gourmet Guide</h1>
+  <p class="text-white">Discover delicious recipes from fellow food enthusiasts.</p>
 </div>
-{{/each}}
