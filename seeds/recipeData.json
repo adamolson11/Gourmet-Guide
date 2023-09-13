@@ -59,6 +59,11 @@
                 "ingredientName": "Onions",
                 "ingredientAmount": "(1)"
             },
+            {
+                "ingredientNumber": "5",
+                "ingredientName": "celery",
+                "ingredientAmount": "(1 stalk)"
+            },
         ],
         "steps": [
             {
@@ -67,7 +72,7 @@
             },
             {
                 "stepNumber": "2",
-                "stepText": "Slice celery to desired thinness"
+                "stepText": "Slice celery & onions"
             },
             {
                 "stepNumber": "3",
@@ -78,7 +83,7 @@
     },
     {
         "name": "Meatloaf",
-        "description": "A load made of meat",
+        "description": "A baked dish of ground beef",
         "ingredients" : [
             {
                 "ingredientNumber": "1",
@@ -87,13 +92,13 @@
             },
             {
                 "ingredientNumber": "2",
-                "ingredientName": "Pork",
-                "ingredientAmount": "1 pound"
+                "ingredientName": "breadcrumbs",
+                "ingredientAmount": "1 cup"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Brown Sugar",
-                "ingredientAmount": "2 C"
+                "ingredientName": "egg",
+                "ingredientAmount": "1"
             },
             {
                 "ingredientNumber": "4",
