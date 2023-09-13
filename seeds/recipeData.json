@@ -11,12 +11,12 @@
             {
                 "ingredientNumber": "2",
                 "ingredientName": "Spaghetti Noodles",
-                "ingredientAmount": ""
+                "ingredientAmount": "2 cups"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Frozen Meatballs",
-                "ingredientAmount": ""
+                "ingredientName": "Meatballs",
+                "ingredientAmount": "3 lbs of beef"
             }
         ],
         "steps": [
@@ -30,7 +30,7 @@
             },
             {
                 "stepNumber": "3",
-                "stepText": "Thaw meatballs in sauce. Mix and serve"
+                "stepText": "brown ground beef & add sauce. Mix with noodles and serve"
             }
         ],
         "createdUserId": "1"
@@ -54,6 +54,11 @@
                 "ingredientName": "Cranberries",
                 "ingredientAmount": "1 C"
             }
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Onions",
+                "ingredientAmount": "(1)"
+            },
         ],
         "steps": [
             {
