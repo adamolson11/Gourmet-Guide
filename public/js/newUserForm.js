@@ -24,4 +24,8 @@ formEl.addEventListener('submit', e => {
         password: passwordEl.value
     }
 
+    fetch("/api/new-user", {
+        
+    })
+
 })
