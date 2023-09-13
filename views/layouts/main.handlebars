@@ -18,7 +18,11 @@
       <div>
         <ul>
           <li><a href="/recipes">View All Recipes</a></li>
+          {{#if logged_in}}
           <li><a href="/profile">Your Profile</a></li>
+          {{else}}
+          <li><a href="/signup">Create a Profile</a></li>
+          {{/if}}
           <li><a href="#">Add Your Recipe</a></li>
         </ul>
       </div>

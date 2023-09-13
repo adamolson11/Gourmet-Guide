@@ -47,14 +47,14 @@ router.post('/logout', (req, res) => {
 router.post('/new-user', async (req, res) => {
   try{
     const {username, firstName, lastName, email, password} = req.body
-    const existingUser = User.findOne({where: username})
+    const existingUser = await User.findOne({where: {username}})
     
     //if username exists, gives error
     if (existingUser){
       return res.status(400).json({message: "Username already exists"})
     }
 
-    const existingEmail = User.findOne({where: email})
+    const existingEmail = await User.findOne({where: {email}})
 
     //if email exists in database, give error
     if (existingEmail) {
@@ -73,7 +73,7 @@ router.post('/new-user', async (req, res) => {
       password: hashPassword
     })
     //gives 201 status and redirects to profile page
-    res.status(201).redirect(`/profile/${newUser.id}`)
+    res.status(201).redirect(`/`)
   }
   catch (err) {
     res.status(500).json(err)
