@@ -79,6 +79,10 @@ router.get('/signup', async (req, res) => {
 })
 
 router.get('/add-recipe', (req, res) => {
+  const userId = req.session.user_id
+  if (!userId) {
+    res.redirect('/login')
+  }
   try {
     res.render('add-recipe')
   } catch (err) {
