@@ -73,7 +73,6 @@ router.get('/login', (req, res) => {
 
 router.get('/profile', async (req, res) => {
   try {
-    console.log(req.session.user_id)
     let user = await User.findByPk(req.session.user_id, {
       include: [{ model: Recipe }],
     })
@@ -81,6 +80,15 @@ router.get('/profile', async (req, res) => {
     res.render('profile', user)
   } catch (err) {
     res.status(500).json(err);
+  }
+})
+
+router.get('/signup', async (req,res) => {
+  try{
+    res.render('signup')
+  }
+  catch(err) {
+    res.status(500).json(err)
   }
 })
 
