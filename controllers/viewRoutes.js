@@ -3,7 +3,21 @@ const { User, Recipe } = require('../models');
 const { findByPk } = require('../models/User');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
+
+
+// router.get('/layouts/main', (req, res) => {
+//   try {
+//     res.render('layouts/main'); // Render the 'main' template without any additional data
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+
+
+
+
+
+router.get('/',  async (req, res) => {
   try {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
