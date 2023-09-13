@@ -102,29 +102,44 @@
             },
             {
                 "ingredientNumber": "4",
+                "ingredientName": "onion",
+                "ingredientAmount": "1"
+            },
+            {
+                "ingredientNumber": "5",
                 "ingredientName": "Ketchup",
                 "ingredientAmount": "1 C"
             }
+            {
+                "ingredientNumber": "6",
+                "ingredientName": "salt",
+                "ingredientAmount": "1 teaspoon"
+            }
+            {
+                "ingredientNumber": "7",
+                "ingredientName": "pepper",
+                "ingredientAmount": "1 teaspoon"
+    }
         ],
         "steps": [
             {
                 "stepNumber": "1",
-                "stepText": "Mix brown sugar, beef and pork in a bowl"
+                "stepText": "Mix onion, egg, beef, salt, pepper & breadcrumbs in a bowl"
             },
             {
                 "stepNumber": "2",
-                "stepText": "Form into a loaf shape and put it on a baking sheet"
+                "stepText": "Put meat mixture in a loaf pan"
             },
             {
                 "stepNumber": "3",
-                "stepText": "Cook at 350 degrees for 30 minutes"
+                "stepText": "Cook at 350 degrees for 30 - 40 minutes"
             },
             {
                 "stepNumber": "4",
                 "stepText": "Remove from oven, top with ketchup, return to the oven and cook for 15 more minutes"
             },
             {
-                "stepNumber": "",
+                "stepNumber": "5",
                 "stepText": "Let cool for 10 minutes then serve"
             }
         ],
