@@ -22,7 +22,7 @@
         "steps": [
             {
                 "stepNumber": "1",
-                "stepText": "Boil noodles"
+                "stepText": "Boil noodles & drain"
             },
             {
                 "stepNumber": "2",
@@ -76,10 +76,14 @@
             },
             {
                 "stepNumber": "3",
-                "stepText": "Mix ingredients in bowl"
+                "stepText": "add mayo"
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "Mix all ingredients in bowl"
             }
         ],
-        "createdUserId": "1"
+        "createdUserId": "2"
     },
     {
         "name": "Meatloaf",
@@ -143,7 +147,7 @@
                 "stepText": "Let cool for 10 minutes then serve"
             }
         ],
-        "createdUserId": "2"
+        "createdUserId": "3"
     },
     {
         "name": "Tacos",
@@ -176,6 +180,16 @@
             },
             {
                 "ingredientNumber": "6",
+                "ingredientName": "Tomatoes sliced",
+                "ingredientAmount": "2 tomatoes"
+            },
+            {
+                "ingredientNumber": "7",
+                "ingredientName": "Cheese",
+                "ingredientAmount": "8 oz bag"
+            },
+            {
+                "ingredientNumber": "8",
                 "ingredientName": "Taco Sauce",
                 "ingredientAmount": "16oz jar"
             }
@@ -198,7 +212,7 @@
                 "stepText": "Allow guests to add their own toppings to the tortillas"
             }
         ],
-        "createdUserId": "2"
+        "createdUserId": "4"
     },
     {
         "name": "Mac and Cheese",
@@ -225,7 +239,7 @@
                 "stepText": "Cut the brick into smaller cubes, then stir into the hot noodles until cheese is melted"
             }
         ],
-        "createdUserId": "3"
+        "createdUserId": "5"
     },
     {
         "name": "Applesauce",
@@ -274,6 +288,6 @@
                 "stepText": "Remove from heat and serve"
             }
         ],
-        "createdUserId": "4"
+        "createdUserId": "6"
     }
 ]
