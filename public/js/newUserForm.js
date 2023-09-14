@@ -10,6 +10,11 @@ const nameChar = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ 0123456789]/
 
 formEl.addEventListener('submit', async e => {
     e.preventDefault()
+
+    if (!emailEl.value || !firstNameEl.value || !lastNameEl.value || !emailEl.value || !passwordEl.value) {
+        alert('Fill out the entire form')
+        return
+    }
     
     const firstNameTest = nameChar.test(firstNameEl.value)
     const lastNameTest = nameChar.test(lastNameEl.value)
@@ -26,19 +31,33 @@ formEl.addEventListener('submit', async e => {
         alert("Name can only be letters")
         return
      }
+
+
+    const firstNameLen = firstNameEl.value.length
+    const lastNameLen = lastNameEl.value.length
+    if (firstNameLen > 255 || lastNameLen > 255) {
+        alert(`First and last name have a max length of 255 characters each`)
+    }
+
+    const emailLen = emailEl.value.length
+    if (emailLen > 255) {
+        alert ("Email cannot exceed more than 255 characters. Use a different email address if needed.")
+    }
     
     //check length for username and password
-    if (usernameEl.value.length<3 || usernameEl.value.length>25) {
-        alert("Username must be between 4 and 25 characters")
+
+    const userLen = usernameEl.value.length
+    if (userLen < 4 || userLen > 100) {
+        alert("Username must be between 4 and 100 characters")
         return
     }
 
-    if (passwordEl.value.length<8 || passwordEl.value.length>128) {
+    const passLen = passwordEl.value.length
+    if (passLen < 8 || passLen > 128) {
         alert("Password must be between 8 and 128 characters")
         return
         }
     
-
 
     const newUserData = {
         username: usernameEl.value,
@@ -47,7 +66,6 @@ formEl.addEventListener('submit', async e => {
         email: emailEl.value,
         password: passwordEl.value
     }
-
     try{
         const response = await fetch("/api/users/new-user", {
             method: 'POST',
@@ -56,7 +74,6 @@ formEl.addEventListener('submit', async e => {
             },
             body: JSON.stringify(newUserData)
         })
-
         if (response.ok) {
             // Redirect to the new page upon successful registration
             alert('User created successfully!')
