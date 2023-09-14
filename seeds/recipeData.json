@@ -45,7 +45,7 @@
                 "ingredientAmount": "(2) 5oz cans"
             },
             {
-                "ingredientNumber": "2",
+                "ingredientNumber" : "2",
                 "ingredientName": "Mayo",
                 "ingredientAmount": "1 C"
             },
@@ -63,7 +63,7 @@
                 "ingredientNumber": "5",
                 "ingredientName": "celery",
                 "ingredientAmount": "(1 stalk)"
-            }   ``
+            }  
         ],
         "steps": [
             {
@@ -288,33 +288,74 @@
                 "stepText": "Remove from heat and serve"
             }
         ],    
-         "createdUserId": "6"
+        "createdUserId": "6"
     {,
     }
-        "name": "Applesauce",
-        "description": "Smooth sauce made of apples",
+        "name": "Tuna",
+        "description": "seafood delight",
         "ingredients" : [
             {
                 "ingredientNumber": "1",
-                "ingredientName": "Apples",
-                "ingredientAmount": "3 pounds"
+                "ingredientName": "tuna"
+                "ingredientAmount": "8oz can"
             },
             {
                 "ingredientNumber": "2",
-                "ingredientName": "Sugar",
-                "ingredientAmount": "1 pound"
+                "ingredientName": "mayo",
+                "ingredientAmount": "2 cups"
             },
             {
-                        "ingredientNumber": "3",
-                        "ingredientName": "Cinnamon",
-                        "ingredientAmount": "1 Tbsp"
+                "ingredientNumber": "3",
+                "ingredientName": "mustard",
+                "ingredientAmount": "1 Tbsp"
             },
             {
-                        "ingredientNumber": "4",
-                        "ingredientName": "Butter",
-                        "ingredientAmount": "1 stick"
+                "ingredientNumber": "4",
+                "ingredientName": "relish",
+                "ingredientAmount": "1/4 cup"
+            },
+            {
+                "ingredientNumber": "5",
+                "ingredientName": "salt",
+                "ingredientAmount": "1 teaspoon"
+            },
+            {
+                "ingredientNumber": "6",
+                "ingredientName": "pepper",
+                "ingredientAmount": "1 teaspoon"
+            },
+            {
+                "ingredientNumber": "7",
+                "ingredientName": "hard boil egg",
+                "ingredientAmount": "2"
+            },
+            {
+                "ingredientNumber": "8",
+                "ingredientName": "onions",
+                "ingredientAmount": "1/4 cup"
             }
-       ],          
+       ],      
+       "steps": [
+           {
+                "stepNumber": "1",
+                "stepText": "open & drain can of tuna"
+           {
+                "stepNumber": "2",
+                "stepText": "add mayo, mustard, onions, relish, pepper, salt & eggs."
+           },
+           {
+                "stepNumber": "3",
+                "stepText": "mix thoroughly"
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "serve on bread"
+            },
+            {
+                "stepNumber": "5",
+                "stepText": "serve on crackers"
+        }
+    ],        
         "createdUserId": "8"
-    }
-]
+        }
+    ],
