@@ -6,26 +6,32 @@ const passwordEl = document.getElementById('password')
 const formEl = document.querySelector('form')
 
 const specChar = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/
-const nameChar = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ 0123456789]/
+const nameChar = /[`!@#$%^&*()_\+=\[\]{};:"\\|,.<>\/?~0123456789]/
 
 formEl.addEventListener('submit', async e => {
     e.preventDefault()
 
-    if (!emailEl.value || !firstNameEl.value || !lastNameEl.value || !emailEl.value || !passwordEl.value) {
-        alert('Fill out the entire form')
+    if (!usernameEl.value || !firstNameEl.value || !lastNameEl.value || !emailEl.value || !passwordEl.value) {
+        alert('Fill out the entire form to continue')
         return
     }
     
-    const firstNameTest = nameChar.test(firstNameEl.value)
-    const lastNameTest = nameChar.test(lastNameEl.value)
     const usernameTest = specChar.test(usernameEl.value)
-
     //checks for special characters in username
     if (usernameTest) {
             alert("Username can only be letters and numbers")
             return
         }
 
+    const userLen = usernameEl.value.length
+    //checks len for username
+    if (userLen < 4 || userLen > 100) {
+        alert("Username must be between 4 and 100 characters")
+        return
+    }
+
+    const firstNameTest = nameChar.test(firstNameEl.value)
+    const lastNameTest = nameChar.test(lastNameEl.value)
     //checks if firstName and lastName are only letters 
     if (firstNameTest || lastNameTest) {
         alert("Name can only be letters")
@@ -35,22 +41,18 @@ formEl.addEventListener('submit', async e => {
 
     const firstNameLen = firstNameEl.value.length
     const lastNameLen = lastNameEl.value.length
+    //checks first and last name len
     if (firstNameLen > 255 || lastNameLen > 255) {
         alert(`First and last name have a max length of 255 characters each`)
     }
 
     const emailLen = emailEl.value.length
+    //check email len
     if (emailLen > 255) {
         alert ("Email cannot exceed more than 255 characters. Use a different email address if needed.")
     }
     
-    //check length for username and password
-
-    const userLen = usernameEl.value.length
-    if (userLen < 4 || userLen > 100) {
-        alert("Username must be between 4 and 100 characters")
-        return
-    }
+    //check length for password
 
     const passLen = passwordEl.value.length
     if (passLen < 8 || passLen > 128) {
@@ -58,7 +60,6 @@ formEl.addEventListener('submit', async e => {
         return
         }
     
-
     const newUserData = {
         username: usernameEl.value,
         firstName: firstNameEl.value,
