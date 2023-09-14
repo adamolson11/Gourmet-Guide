@@ -53,7 +53,7 @@
                 "ingredientNumber": "3",
                 "ingredientName": "Cranberries",
                 "ingredientAmount": "1 C"
-            }
+            },
             {
                 "ingredientNumber": "4",
                 "ingredientName": "Onions",
@@ -289,14 +289,14 @@
             }
         ],    
         "createdUserId": "6"
-    {,
-    }
+    },
+    {
         "name": "Tuna",
-        "description": "seafood delight",
+        "description": "seafood delight sandwich",
         "ingredients" : [
             {
                 "ingredientNumber": "1",
-                "ingredientName": "tuna"
+                "ingredientName": "tuna",
                 "ingredientAmount": "8oz can"
             },
             {
@@ -339,6 +339,7 @@
            {
                 "stepNumber": "1",
                 "stepText": "open & drain can of tuna"
+           },
            {
                 "stepNumber": "2",
                 "stepText": "add mayo, mustard, onions, relish, pepper, salt & eggs."
@@ -353,9 +354,9 @@
             },
             {
                 "stepNumber": "5",
-                "stepText": "serve on crackers"
-        }
-    ],        
-        "createdUserId": "8"
-        }
-    ],
+                "stepText": "serve with crackers"
+            }
+        ],        
+        "createdUserId": "7"
+    }
+]    
