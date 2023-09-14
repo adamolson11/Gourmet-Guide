@@ -5,6 +5,7 @@ const withAuth = require('../utils/auth');
 
 
 
+
 // router.get('/layouts/main', (req, res) => {
 //   try {
 //     res.render('layouts/main'); // Render the 'main' template without any additional data

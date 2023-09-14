@@ -27,10 +27,15 @@ body {
     padding: 15px 0;
 }
 
-
-
 .custom-search-btn {
-    background-color: #28a745; 
-    color: #fff; 
+    background-color: #28a745;
+    color: #ffffff; /* Specify the text color here */
 }
 
+/* Custom CSS for modal positioning */
+.modal-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20
+}
