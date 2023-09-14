@@ -63,7 +63,7 @@
                 "ingredientNumber": "5",
                 "ingredientName": "celery",
                 "ingredientAmount": "(1 stalk)"
-            },
+            }   ``
         ],
         "steps": [
             {
@@ -123,7 +123,7 @@
                 "ingredientNumber": "7",
                 "ingredientName": "pepper",
                 "ingredientAmount": "1 teaspoon"
-    }
+             }
         ],
         "steps": [
             {
@@ -287,7 +287,34 @@
                 "stepNumber": "5",
                 "stepText": "Remove from heat and serve"
             }
-        ],
-        "createdUserId": "6"
+        ],    
+         "createdUserId": "6"
+    {,
+    }
+        "name": "Applesauce",
+        "description": "Smooth sauce made of apples",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Apples",
+                "ingredientAmount": "3 pounds"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Sugar",
+                "ingredientAmount": "1 pound"
+            },
+            {
+                        "ingredientNumber": "3",
+                        "ingredientName": "Cinnamon",
+                        "ingredientAmount": "1 Tbsp"
+            },
+            {
+                        "ingredientNumber": "4",
+                        "ingredientName": "Butter",
+                        "ingredientAmount": "1 stick"
+            }
+       ],          
+        "createdUserId": "8"
     }
 ]
