@@ -94,4 +94,17 @@ router.get('/signup', async (req,res) => {
 })
 
 
+router.get('/sucess', async (req,res) => {
+  try{
+    res.render('sucess')
+  }
+  catch(err) {
+    res.status(500).json(err)
+  }
+})
+
+
+
+
+
 module.exports = router;

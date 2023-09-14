@@ -1,27 +1,28 @@
-
 const router = require('express').Router();
 const { User } = require('../models');
-// const { findByPk } = require('../models/User'); //do I need this???
-// const withAuth = require('../utils/auth'); // I don't think this is needed because it is a new user.
 
-
-router.post('/signup', async (req, res) => {
+router.post('/signup', (req, res) => {
   try {
-   //this is using the sequelize  to create the users
-    const newUser = await User.create({
+    // Create a new user...
+    User.create({
       username: req.body.username,
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password,
-      createdRecipesIds: [],
-    });
+      // do I need to add ID or anything???
+    })
 
-    // now we need to send that response to the JSON data table
-    res.json(newUser);
+      .then((newUser) => {
+        // Send the newly created row as a JSON object
+        res.json(newUser);
+      })
+
+    // Redirect the user to a success page or any other desired route
+    res.redirect('/success'); // has its own page now.
   } catch (error) {
-    
-    res.status(500).json({ error: 'no user was created...yet' });
+    console.error(error);
+    res.status(500).json({ error: 'Failed to create a user' });
   }
 });
 
