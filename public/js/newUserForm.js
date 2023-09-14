@@ -6,18 +6,28 @@ const passwordEl = document.getElementById('password')
 const formEl = document.querySelector('form')
 
 const specChar = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/
-// /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?0-9]/
+const nameChar = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ 0123456789]/
+
 formEl.addEventListener('submit', async e => {
     e.preventDefault()
-    // 
-    // const firstNameTest = /^[a-zA-Z]/.test(firstNameEl.value)
-    // const lastNameTest = /^[a-zA-Z]/.test(lastNameEl.value)
-    const usernameTest = specChar.test(usernameEl.value)
     
+    const firstNameTest = nameChar.test(firstNameEl.value)
+    const lastNameTest = nameChar.test(lastNameEl.value)
+    const usernameTest = specChar.test(usernameEl.value)
 
-    console.log(usernameTest)
+    //checks for special characters in username
+    if (usernameTest) {
+            alert("Username can only be letters and numbers")
+            return
+        }
 
-    //check length fior username and password
+    //checks if firstName and lastName are only letters 
+    if (firstNameTest || lastNameTest) {
+        alert("Name can only be letters")
+        return
+     }
+    
+    //check length for username and password
     if (usernameEl.value.length<3 || usernameEl.value.length>25) {
         alert("Username must be between 4 and 25 characters")
         return
@@ -27,18 +37,7 @@ formEl.addEventListener('submit', async e => {
         alert("Password must be between 8 and 128 characters")
         return
         }
-
-    //     //checks if firstName and lastName are only letters 
-    // if (firstNameTest === false || lastNameTest === false) {
-    //     alert("Name can only be letters")
-    //     return
-    //  }
     
-
-     if (usernameTest) {
-        alert("Username can only be letters and numbers")
-        return
-     }
 
 
     const newUserData = {
@@ -49,8 +48,6 @@ formEl.addEventListener('submit', async e => {
         password: passwordEl.value
     }
 
-    console.log(newUserData)
-
     try{
         const response = await fetch("/api/users/new-user", {
             method: 'POST',
@@ -59,8 +56,6 @@ formEl.addEventListener('submit', async e => {
             },
             body: JSON.stringify(newUserData)
         })
-
-        console.log(response)
 
         if (response.ok) {
             // Redirect to the new page upon successful registration
