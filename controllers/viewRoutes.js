@@ -84,11 +84,23 @@ router.get('/profile', async (req, res) => {
   }
 })
 
-router.get('/signup', async (req,res) => {
-  try{
+router.get('/signup', async (req, res) => {
+  try {
     res.render('signup')
   }
-  catch(err) {
+  catch (err) {
+    res.status(500).json(err)
+  }
+})
+
+router.get('/add-recipe', (req, res) => {
+  const userId = req.session.user_id
+  if (!userId) {
+    res.redirect('/login')
+  }
+  try {
+    res.render('add-recipe')
+  } catch (err) {
     res.status(500).json(err)
   }
 })
