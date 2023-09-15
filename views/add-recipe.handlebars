@@ -1,44 +1,44 @@
 <div class="container row mx-auto col-10 col-md-8 col-lg-6">
-  <h2 class="text-center mb-4">Add your own recipe below</h2>
-  <div class="align-items-center mb-5">
+  <h2 class="fs-1 text-center mb-4 text-light">Add your own recipe below</h2>
+  <div class="align-items-center mb-5 bg-primary shadow-lg rounded-4 text-light p-3">
     <form>
       <div class="mb-3">
         <label for="recipeName" class="form-label">Enter the name of your dish</label>
-        <input type="text" class="form-control" id="recipeName">
+        <input type="text" class="form-control shadow" id="recipeName">
       </div>
 
       <div class="mb-3">
         <label for="recipeDescription" class="form-label">Give a short description of your dish</label>
-        <textarea class="form-control" placeholder="Write your description here" id="recipeDescription" style="height: 100px"></textarea>
+        <textarea class="form-control shadow" placeholder="Write your description here..." id="recipeDescription" style="height: 100px"></textarea>
       </div>
 
       <div class="mb-3">
-        <h3 class="fs-4">Add your ingredients </h3>
+        <h3 class="fs-4 text-center">Add your ingredients </h3>
         <div class="row" id="ingredientInputs">
           
             <div id="nameDiv" class="col">
               <label for="ingredientName" class="form-label">Name of ingredient</label>
-              <input type="text" class="form-control col ingredientName"  name="ingredientName">
+              <input type="text" class="form-control col ingredientName shadow"  name="ingredientName">
             </div>
 
             <div id="amountDiv" class="col">
               <label for="ingredientAmount" class="form-label">Enter Amount</label>
-              <input type="text" class="form-control col amount" >
+              <input type="text" class="form-control col amount shadow">
             </div>
           
         </div>
-         <button id="addIngredient" type="button" class="btn btn-primary btn-sm m-1">+ ingredient</button>
+         <button id="addIngredient" type="button" class="btn btn-primary btn-sm m-1 shadow">+ ingredient</button>
         
       </div>
 
       <div id="stepDiv" class="m-1">
         <label for="steps" class="form-label">Add the steps to create this dish</label>
-        <input type="text" class="form-control steps">
+        <input type="text" class="form-control steps shadow">
       </div>
-        <button id="stepsBtn" type="button" class="btn btn-primary btn-sm">+ step</button>
+        <button id="stepsBtn" type="button" class="btn btn-primary btn-sm shadow">+ step</button>
 
-      <div class="text-center">
-        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      <div class="text-center mb-3">
+        <button id="submit" type="submit" class="btn btn-primary shadow">Submit</button>
       </div>
     </form>
   </div>
