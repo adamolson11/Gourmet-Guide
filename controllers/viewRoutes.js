@@ -18,7 +18,7 @@ const withAuth = require('../utils/auth');
 
 
 
-router.get('/',  async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
@@ -99,18 +99,18 @@ router.get('/add-recipe', (req, res) => {
     res.redirect('/login')
   }
   try {
-    res.render('add-recipe')
+    res.render('add-recipe', { logged_in: req.session.logged_in })
   } catch (err) {
     res.status(500).json(err)
   }
 })
 
 
-router.get('/sucess', async (req,res) => {
-  try{
+router.get('/sucess', async (req, res) => {
+  try {
     res.render('sucess')
   }
-  catch(err) {
+  catch (err) {
     res.status(500).json(err)
   }
 })
