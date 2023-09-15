@@ -34,6 +34,7 @@
                     <a class="nav-link text-white" href="/add-recipe">Add Your Recipe</a>
                 </li>
             </ul>
+            
             <div class="container text-center mx-auto" style="max-width: 400px;">
                 <form class="form-inline">
                     <div class="input-group">
@@ -117,5 +118,33 @@
 
     <!-- Then include your custom modal.js -->
     <script src="/js/modal.js"></script>
+    <script type="text/javascript">(function(d, t, e, m){
+    
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function(){
+                
+        RW.init({
+            huid: "493290",
+            uid: "ae57750eff3f809c0bc23a947bc89876",
+            options: { "style": "oxygen" } 
+        });
+        RW.render();
+    };
+        // Append Rating-Widget JavaScript library... this is the website that I got the rating system from. https://rating-widget.com/get/rating/javascript/#editor
+        //
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+        l = d.location, ck = "Y" + t.getFullYear() + 
+        "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+        f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+        a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;              
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+    }(document, new Date(), "script", "rating-widget.com/"));</script>
+
+
+
 </body>
 </html>
