@@ -1,0 +1,41 @@
+/* Add your CSS rules here */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/landingpageImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Use flex to expand main content to fill available space */
+    padding-bottom: 100px; /* Adjust this value as needed */
+}
+
+.footer {
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.custom-search-btn {
+    background-color: #28a745;
+    color: #ffffff; /* Specify the text color here */
+}
+
+/* Custom CSS for modal positioning */
+.modal-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20
+}
