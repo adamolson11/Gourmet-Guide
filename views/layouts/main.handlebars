@@ -24,14 +24,14 @@
                 </li>
                 <li class="nav-item">
                    {{#if logged_in}}
-                      <a href="/profile">Your Profile</a>
+                      <a class="nav-link text-white" href="/profile">Your Profile</a>
                     {{else}}
-                      <a href="/signup">Create a User</a>
+                      <a class="nav-link text-white" href="/signup">Create a User</a>
                     {{/if}}
                 </li>
                 <li class="nav-item"></li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Add Your Recipe</a>
+                    <a class="nav-link text-white" href="/add-recipe">Add Your Recipe</a>
                 </li>
             </ul>
             <div class="container text-center mx-auto" style="max-width: 400px;">
@@ -61,25 +61,31 @@
     <script src="/js/logout.js"></script>
     {{/if}}
 
-    <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Sign up and share Recipes HERE!!!
     </button>
 
-    <!-- Modal -->
+    
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">"Recipes are like a roadmap to a chef's heart." </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Add your modal content here -->
+                    <p>Welcome to Gourmet Guide! We're excited that you want to share your delicious recipes with our community. By signing up, you'll be able to:</p>
+                <ul>
+                    <li>Post your favorite recipes</li>
+                    <li>Interact with other food enthusiasts</li>
+                    <li>Save and organize your favorite recipes</li>
+                </ul>
+                <p>Join our culinary community today!</p>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <button type="button" class="btn btn-primary">signup</button>
                 </div>
             </div>
         </div>

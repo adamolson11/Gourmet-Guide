@@ -16,8 +16,8 @@ body {
 }
 
 .main-content {
-    flex: 1; /* Use flex to expand main content to fill available space */
-    padding-bottom: 100px; /* Adjust this value as needed */
+    flex: 1; 
+    padding-bottom: 100px; 
 }
 
 .footer {
@@ -29,13 +29,7 @@ body {
 
 .custom-search-btn {
     background-color: #28a745;
-    color: #ffffff; /* Specify the text color here */
+    color: #ffffff;
 }
 
-/* Custom CSS for modal positioning */
-.modal-bottom-right {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 20
-}
+
