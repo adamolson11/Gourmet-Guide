@@ -1,9 +1,15 @@
-<h2>{{username}}</h2>
-{{#each recipes}}
-<div>
-  <a href="/recipe/{{this.id}}">
-    <h3>{{this.name}}</h3>
-  </a>
-  <p>{{this.description}}</p>
+<div class="container my-1">
+   <div class="text-center"> <!-- this will center our username -->
+    <h2>{{username}}</h2>
+    {{#each recipes}}
+    <div class="card bg-white text-black mb-3">
+        <div class="card-body">
+            <a href="/recipe/{{this.id}}"> 
+            {{!-- this is the code that allows us to separate them into their own cards --}}
+                <h3>{{this.name}}</h3>
+            </a>
+            <p>{{this.description}}</p>
+        </div>
+    </div>
+    {{/each}}
 </div>
-{{/each}}

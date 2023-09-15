@@ -11,18 +11,18 @@
             {
                 "ingredientNumber": "2",
                 "ingredientName": "Spaghetti Noodles",
-                "ingredientAmount": ""
+                "ingredientAmount": "2 cups"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Frozen Meatballs",
-                "ingredientAmount": ""
+                "ingredientName": "Meatballs",
+                "ingredientAmount": "3 lbs of beef"
             }
         ],
         "steps": [
             {
                 "stepNumber": "1",
-                "stepText": "Boil noodles"
+                "stepText": "Boil noodles & drain"
             },
             {
                 "stepNumber": "2",
@@ -30,7 +30,7 @@
             },
             {
                 "stepNumber": "3",
-                "stepText": "Thaw meatballs in sauce. Mix and serve"
+                "stepText": "brown ground beef & add sauce. Mix with noodles and serve"
             }
         ],
         "createdUserId": "1"
@@ -45,7 +45,7 @@
                 "ingredientAmount": "(2) 5oz cans"
             },
             {
-                "ingredientNumber": "2",
+                "ingredientNumber" : "2",
                 "ingredientName": "Mayo",
                 "ingredientAmount": "1 C"
             },
@@ -53,7 +53,17 @@
                 "ingredientNumber": "3",
                 "ingredientName": "Cranberries",
                 "ingredientAmount": "1 C"
-            }
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Onions",
+                "ingredientAmount": "(1)"
+            },
+            {
+                "ingredientNumber": "5",
+                "ingredientName": "celery",
+                "ingredientAmount": "(1 stalk)"
+            }  
         ],
         "steps": [
             {
@@ -62,18 +72,22 @@
             },
             {
                 "stepNumber": "2",
-                "stepText": "Slice celery to desired thinness"
+                "stepText": "Slice celery & onions"
             },
             {
                 "stepNumber": "3",
-                "stepText": "Mix ingredients in bowl"
+                "stepText": "add mayo"
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "Mix all ingredients in bowl"
             }
         ],
-        "createdUserId": "1"
+        "createdUserId": "2"
     },
     {
         "name": "Meatloaf",
-        "description": "A load made of meat",
+        "description": "A baked dish of ground beef",
         "ingredients" : [
             {
                 "ingredientNumber": "1",
@@ -82,43 +96,58 @@
             },
             {
                 "ingredientNumber": "2",
-                "ingredientName": "Pork",
-                "ingredientAmount": "1 pound"
+                "ingredientName": "breadcrumbs",
+                "ingredientAmount": "1 cup"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Brown Sugar",
-                "ingredientAmount": "2 C"
+                "ingredientName": "egg",
+                "ingredientAmount": "1"
             },
             {
                 "ingredientNumber": "4",
+                "ingredientName": "onion",
+                "ingredientAmount": "1"
+            },
+            {
+                "ingredientNumber": "5",
                 "ingredientName": "Ketchup",
                 "ingredientAmount": "1 C"
             }
+            {
+                "ingredientNumber": "6",
+                "ingredientName": "salt",
+                "ingredientAmount": "1 teaspoon"
+            }
+            {
+                "ingredientNumber": "7",
+                "ingredientName": "pepper",
+                "ingredientAmount": "1 teaspoon"
+             }
         ],
         "steps": [
             {
                 "stepNumber": "1",
-                "stepText": "Mix brown sugar, beef and pork in a bowl"
+                "stepText": "Mix onion, egg, beef, salt, pepper & breadcrumbs in a bowl"
             },
             {
                 "stepNumber": "2",
-                "stepText": "Form into a loaf shape and put it on a baking sheet"
+                "stepText": "Put meat mixture in a loaf pan"
             },
             {
                 "stepNumber": "3",
-                "stepText": "Cook at 350 degrees for 30 minutes"
+                "stepText": "Cook at 350 degrees for 30 - 40 minutes"
             },
             {
                 "stepNumber": "4",
                 "stepText": "Remove from oven, top with ketchup, return to the oven and cook for 15 more minutes"
             },
             {
-                "stepNumber": "",
+                "stepNumber": "5",
                 "stepText": "Let cool for 10 minutes then serve"
             }
         ],
-        "createdUserId": "2"
+        "createdUserId": "3"
     },
     {
         "name": "Tacos",
@@ -151,6 +180,16 @@
             },
             {
                 "ingredientNumber": "6",
+                "ingredientName": "Tomatoes sliced",
+                "ingredientAmount": "2 tomatoes"
+            },
+            {
+                "ingredientNumber": "7",
+                "ingredientName": "Cheese",
+                "ingredientAmount": "8 oz bag"
+            },
+            {
+                "ingredientNumber": "8",
                 "ingredientName": "Taco Sauce",
                 "ingredientAmount": "16oz jar"
             }
@@ -173,7 +212,7 @@
                 "stepText": "Allow guests to add their own toppings to the tortillas"
             }
         ],
-        "createdUserId": "2"
+        "createdUserId": "4"
     },
     {
         "name": "Mac and Cheese",
@@ -200,7 +239,7 @@
                 "stepText": "Cut the brick into smaller cubes, then stir into the hot noodles until cheese is melted"
             }
         ],
-        "createdUserId": "3"
+        "createdUserId": "5"
     },
     {
         "name": "Applesauce",
@@ -248,7 +287,76 @@
                 "stepNumber": "5",
                 "stepText": "Remove from heat and serve"
             }
-        ],
-        "createdUserId": "4"
+        ],    
+        "createdUserId": "6"
+    },
+    {
+        "name": "Tuna",
+        "description": "seafood delight sandwich",
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "tuna",
+                "ingredientAmount": "8oz can"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "mayo",
+                "ingredientAmount": "2 cups"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "mustard",
+                "ingredientAmount": "1 Tbsp"
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "relish",
+                "ingredientAmount": "1/4 cup"
+            },
+            {
+                "ingredientNumber": "5",
+                "ingredientName": "salt",
+                "ingredientAmount": "1 teaspoon"
+            },
+            {
+                "ingredientNumber": "6",
+                "ingredientName": "pepper",
+                "ingredientAmount": "1 teaspoon"
+            },
+            {
+                "ingredientNumber": "7",
+                "ingredientName": "hard boil egg",
+                "ingredientAmount": "2"
+            },
+            {
+                "ingredientNumber": "8",
+                "ingredientName": "onions",
+                "ingredientAmount": "1/4 cup"
+            }
+       ],      
+       "steps": [
+           {
+                "stepNumber": "1",
+                "stepText": "open & drain can of tuna"
+           },
+           {
+                "stepNumber": "2",
+                "stepText": "add mayo, mustard, onions, relish, pepper, salt & eggs."
+           },
+           {
+                "stepNumber": "3",
+                "stepText": "mix thoroughly"
+            },
+            {
+                "stepNumber": "4",
+                "stepText": "serve on bread"
+            },
+            {
+                "stepNumber": "5",
+                "stepText": "serve with crackers"
+            }
+        ],        
+        "createdUserId": "7"
     }
-]
+]    

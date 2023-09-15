@@ -1,14 +1,21 @@
-<h1>{{name}}</h1>
-<p>Posted by {{user.username}}</p>
-<p>{{description}}</p>
-<ul>
-  {{#each ingredients}}
-    <li>{{this.ingredientName}} - {{this.ingredientAmount}}</li>
-  {{/each}}
-</ul>
-<ul>
-  {{#each steps}}
-    <li>{{this.stepNumber}} - {{this.stepText}}</li>
-  {{/each}}
-</ul>
-
+<div class="container mt-5">
+    <div class="row">
+        <main class="col-md-8 mx-auto bg-primary text-white rounded p-4">
+            <h1>{{name}}</h1>
+            <p>Posted by {{user.username}}</p>
+            <p>{{description}}</p>
+            <h2>Ingredients:</h2>
+            <ul>
+                {{#each ingredients}}
+                    <li>{{this.ingredientName}} - {{this.ingredientAmount}}</li>
+                {{/each}}
+            </ul>
+            <h2>Steps:</h2>
+            <ol>
+                {{#each steps}}
+                    <li>{{this.stepNumber}} - {{this.stepText}}</li>
+                {{/each}}
+            </ol>
+        </main>
+    </div>
+</div>

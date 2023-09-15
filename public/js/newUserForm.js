@@ -3,13 +3,17 @@ const firstNameEl = document.getElementById('firstName')
 const lastNameEl = document.getElementById('lastName')
 const emailEl = document.getElementById('email')
 const passwordEl = document.getElementById('password')
-const formEl = document.querySelector('form')
+const formEl = document.getElementById('user-form')
 
 const specChar = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/
 const nameChar = /[`!@#$%^&*()_\+=\[\]{};:"\\|,.<>\/?~0123456789]/
 
+
 formEl.addEventListener('submit', async e => {
     e.preventDefault()
+    
+    console.log(usernameEl, firstNameEl,lastNameEl, emailEl, passwordEl)
+    console.log(formEl)
 
     if (!usernameEl.value || !firstNameEl.value || !lastNameEl.value || !emailEl.value || !passwordEl.value) {
         alert('Fill out the entire form to continue')
