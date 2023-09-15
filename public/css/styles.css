@@ -9,6 +9,11 @@ body {
     background-attachment: fixed;
 }
 
+nav :hover {
+    text-decoration: none;
+}
+
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -31,5 +36,4 @@ body {
     background-color: #28a745;
     color: #ffffff;
 }
-
 

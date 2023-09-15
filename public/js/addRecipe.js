@@ -16,12 +16,12 @@ ingredientBtn.addEventListener('click', (e) => {
   const amountEl = document.createElement('input')
 
   nameEl.setAttribute('type', 'text')
-  nameEl.classList.add('form-control', 'col', 'mt-1', 'ingredientName')
+  nameEl.classList.add('form-control', 'col', 'shadow', 'mt-1', 'ingredientName')
 
 
 
   amountEl.setAttribute('type', 'text')
-  amountEl.classList.add('form-control', 'col', 'mt-1', 'amount')
+  amountEl.classList.add('form-control', 'col', 'mt-1', 'shadow', 'amount')
 
 
 
@@ -35,7 +35,7 @@ stepsBtn.addEventListener('click', (e) => {
   const stepEl = document.createElement('input')
 
   stepEl.setAttribute('type', 'text')
-  stepEl.classList.add('form-control', 'mt-1', 'steps')
+  stepEl.classList.add('form-control', 'mt-1', 'shadow', 'steps')
 
 
   stepDiv.appendChild(stepEl)

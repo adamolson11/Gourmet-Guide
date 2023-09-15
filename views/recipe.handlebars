@@ -1,8 +1,11 @@
 <div class="container mt-5">
     <div class="row">
-        <main class="col-md-8 mx-auto bg-primary text-white rounded p-4">
+        <main class="col-md-10 mx-auto bg-primary bg-graident text-white rounded-4 p-4 border">
+            <div class="border-bottom">
             <h1>{{name}}</h1>
             <p>Posted by {{user.username}}</p>
+            </div>
+            <br>
             <p>{{description}}</p>
             <h2>Ingredients:</h2>
             <ul>
@@ -11,9 +14,9 @@
                 {{/each}}
             </ul>
             <h2>Steps:</h2>
-            <ol>
+            <ol class="">
                 {{#each steps}}
-                    <li>{{this.stepNumber}} - {{this.stepText}}</li>
+                    <li>{{this.stepText}}</li>
                 {{/each}}
             </ol>
         </main>
