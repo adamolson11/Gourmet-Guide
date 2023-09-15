@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-const bcrypt = require('bcrypt')
+// const bcrypt = require('bcrypt')
 
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-
+    console.log(userData)
     if (!userData) {
       res
         .status(400)
@@ -62,7 +62,7 @@ router.post('/new-user', async (req, res) => {
     }
 
     //hash the password
-    const hashPassword = await bcrypt.hash(password, 10)
+    // const hashPassword = await bcrypt.hash(password, 10)
 
     //add new user to the database
     const newUser = await User.create({
@@ -70,9 +70,10 @@ router.post('/new-user', async (req, res) => {
       firstName,
       lastName,
       email,
-      password: hashPassword
+      password
     })
     //gives 201 status and redirects to profile page
+    res.json(newUser)
     res.status(201).redirect(`/`)
   }
   catch (err) {

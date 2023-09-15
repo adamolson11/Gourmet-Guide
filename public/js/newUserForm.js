@@ -88,10 +88,10 @@ formEl.addEventListener('submit', async e => {
             alert(errorResponse.message)
           }
 
-          req.json(response)
+          res.json(response)
     }
     catch (err) {
-        req.status(500).json(err)
+        res.status(500).json(err)
     }
 
 })
