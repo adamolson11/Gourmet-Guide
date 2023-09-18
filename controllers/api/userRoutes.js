@@ -72,9 +72,15 @@ router.post('/new-user', async (req, res) => {
       email,
       password
     })
-    //gives 201 status and redirects to profile page
-    res.json(newUser)
-    res.status(201).redirect(`/`)
+    
+    req.session.user_id = newUser.id
+    req.session.logged_in = true
+
+    req.session.save(() => {
+      res.status(201).json(newUser)
+    })
+    
+    // res.json(newUser);
   }
   catch (err) {
     res.status(500).json(err)
