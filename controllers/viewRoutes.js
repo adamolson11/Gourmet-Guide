@@ -55,8 +55,11 @@ router.get('/recipe/:id', async (req, res) => {
       include: [{ model: User }]
     })
     recipe = recipe.get({ plain: true })
-    console.log(recipe)
-    res.render('recipe', recipe)
+    let data = {
+      ...recipe,
+      logged_in: req.session.logged_in
+    }
+    res.render('recipe', data)
   } catch (err) {
     res.status(500).json(err)
   }
@@ -75,10 +78,13 @@ router.get('/login', (req, res) => {
 router.get('/profile', async (req, res) => {
   try {
     let user = await User.findByPk(req.session.user_id, {
-      include: [{ model: Recipe }],
-    })
+      include: [{ model: Recipe }]})
     user = user.get({ plain: true })
-    res.render('profile', user)
+    let data = {
+      ...user,
+      logged_in: req.session.logged_in
+    }
+    res.render('profile', data)
   } catch (err) {
     res.status(500).json(err);
   }
@@ -99,24 +105,12 @@ router.get('/add-recipe', (req, res) => {
     res.redirect('/login')
   }
   try {
-    res.render('add-recipe')
+    res.render('add-recipe',
+    {logged_in: req.session.logged_in})
   } catch (err) {
     res.status(500).json(err)
   }
 })
-
-
-router.get('/sucess', async (req,res) => {
-  try{
-    res.render('sucess')
-  }
-  catch(err) {
-    res.status(500).json(err)
-  }
-})
-
-
-
 
 
 module.exports = router;

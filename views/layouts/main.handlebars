@@ -38,24 +38,32 @@
                 </li>
             </ul>
 
+<<<<<<< HEAD
             <div class="container text-center mx-auto" style="max-width: 400px;">
+=======
+            {{!-- <div class="container text-center mx-auto" style="max-width: 400px;">
+>>>>>>> c2c5d68598a6b7c06bc0aedb8ed90881bc2d8848
                 <form class="form-inline">
                     <div class="input-group">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-success custom-search-btn" type="submit">Search</button>
+                            <button class="btn btn-outline-success custom-search-btn" type="submit">Search</button> --}}
+                           
                         </div>
+                        
                     </div>
                 </form>
+                
             </div>
+             {{#if logged_in}}
+                            <div>
+                                <button class="btn btn-warning mx-4" id="logout">Logout</button>
+                            </div>
+                            {{/if}}
         </div>
     </nav>
 
-    {{#if logged_in}}
-    <div>
-        <button class="btn" id="logout">Logout</button>
-    </div>
-    {{/if}}
+
 
     <main class="wrapper mt-5">
         {{{ body }}}
@@ -92,7 +100,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<<<<<<< HEAD
                     <a href="/signup" class="btn btn-primary">Sign up</a>
+=======
+                    <button id= "modal-signup-btn" href="/signup" type="button" class="btn btn-primary">Sign Up</button>
+>>>>>>> c2c5d68598a6b7c06bc0aedb8ed90881bc2d8848
                 </div>
 
             </div>

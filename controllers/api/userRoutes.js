@@ -61,9 +61,6 @@ router.post('/new-user', async (req, res) => {
       return res.status(400).json({message: "Email already in use"})
     }
 
-    //hash the password
-    // const hashPassword = await bcrypt.hash(password, 10)
-
     //add new user to the database
     const newUser = await User.create({
       username,
@@ -80,7 +77,6 @@ router.post('/new-user', async (req, res) => {
       res.status(201).json(newUser)
     })
     
-    // res.json(newUser);
   }
   catch (err) {
     res.status(500).json(err)
