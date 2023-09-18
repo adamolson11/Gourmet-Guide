@@ -27,7 +27,7 @@ ingredientBtn.addEventListener('click', (e) => {
   amountEl.classList.add('form-control', 'col', 'mt-1', 'amount')
 
   deleteBtn.textContent= "-"
-  deleteBtn.classList.add('btn', 'btn-danger')
+  deleteBtn.classList.add('btn', 'btn-danger', 'm-1')
 
   container.appendChild(amountEl)
   container.appendChild(deleteBtn)
@@ -44,13 +44,25 @@ ingredientBtn.addEventListener('click', (e) => {
 
 stepsBtn.addEventListener('click', (e) => {
   e.preventDefault()
+
+  let deleteBtn = document.createElement('button')
+  let container= document.createElement('div')
   const stepEl = document.createElement('input')
 
   stepEl.setAttribute('type', 'text')
   stepEl.classList.add('form-control', 'mt-1', 'steps')
 
+  deleteBtn.textContent= "-"
+  deleteBtn.classList.add('btn', 'btn-danger', 'm-1')
 
-  stepDiv.appendChild(stepEl)
+  container.classList.add('d-flex')
+  container.appendChild(stepEl)
+  container.appendChild(deleteBtn)
+
+  stepDiv.appendChild(container)
+
+  deleteBtn.addEventListener('click', () => { 
+  stepDiv.removeChild(container)})
 })
 
 submitBtn.addEventListener('click', (event) => {
