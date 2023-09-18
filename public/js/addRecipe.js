@@ -12,33 +12,58 @@ const ingredientAmount = document.getElementById('ingredientAmount')
 
 ingredientBtn.addEventListener('click', (e) => {
   e.preventDefault()
+  let container = document.createElement('div')
+  let removeBtn = document.createElement('button')
   const nameEl = document.createElement('input')
   const amountEl = document.createElement('input')
+  
+
+  container.classList.add('d-flex')
 
   nameEl.setAttribute('type', 'text')
   nameEl.classList.add('form-control', 'col', 'mt-1', 'ingredientName')
-
 
 
   amountEl.setAttribute('type', 'text')
   amountEl.classList.add('form-control', 'col', 'mt-1', 'amount')
 
 
+  removeBtn.textContent = "-"
+  removeBtn.classList.add('btn', 'btn-danger', 'mt-1')
 
   nameDiv.appendChild(nameEl)
-  amountDiv.appendChild(amountEl)
+  container.appendChild(amountEl)
+  container.appendChild(removeBtn)
 
+  amountDiv.appendChild(container)
+
+  removeBtn.addEventListener('click', () => {
+    nameDiv.removeChild(nameEl)
+   amountDiv.removeChild(container)
+  })
 })
+
 
 stepsBtn.addEventListener('click', (e) => {
   e.preventDefault()
+  let container = document.createElement('div')
+  let removeBtn = document.createElement('button')
   const stepEl = document.createElement('input')
 
   stepEl.setAttribute('type', 'text')
   stepEl.classList.add('form-control', 'mt-1', 'steps')
 
+  container.classList.add('d-flex')
+  removeBtn.textContent = "-"
+  removeBtn.classList.add('btn', 'btn-danger', 'mt-1')
 
-  stepDiv.appendChild(stepEl)
+  container.appendChild(stepEl)
+  container.appendChild(removeBtn)
+  stepDiv.appendChild(container)
+
+  removeBtn.addEventListener("click", () => {
+    stepDiv.removeChild(container)
+  })
 })
 
 submitBtn.addEventListener('click', (event) => {
