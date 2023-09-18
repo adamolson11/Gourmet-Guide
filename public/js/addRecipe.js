@@ -36,8 +36,8 @@ ingredientBtn.addEventListener('click', (e) => {
   amountDiv.appendChild(container)
 
   deleteBtn.addEventListener('click', () => {
-    nameDiv.removeChild(amountEl)
-    amountDiv.removeChile(container)
+    nameDiv.removeChild(nameEl)
+    amountDiv.removeChild(container)
   })
 
 })
