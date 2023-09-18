@@ -4,13 +4,13 @@
           
         </aside>
         <main class="col-md-8">
-            <h1>All Recipes</h1>
+            <h1 class="page-title bg-secondary p-3 rounded border border-primary text-center">All Recipes</h1>
             {{#each allRecipes}}
             <a href="/recipe/{{id}}" class="text-decoration-none">
                 <div class="card mb-3">
-                    <div class="card-body bg-primary rounded border border-black">
-                        <h2 class="card-title">{{name}}</h2>
-                        <p class="card-text">{{description}}</p>
+                    <div class="card-body bg-primary rounded border border-warning recipe-card">
+                        <h2 class="card-title text-warning">{{name}}</h2>
+                        <p class="card-text text-light">{{description}}</p>
                     </div>
                 </div>
             </a>

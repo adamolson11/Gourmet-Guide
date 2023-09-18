@@ -38,3 +38,38 @@ body {
     text-shadow: 5px 5px 15px blue;
     text-shadow: 3px 3px 5px black
 }
+
+.page-title {
+    font-size: 300%;
+    color: #ffc107;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 1px 1px 5px black
+
+}
+
+.recipe-card {
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px black
+}
+
+.recipe-card:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px #ffc107
+}
+
+.user-card {
+    box-shadow: 2px 2px 15px black;
+    text-shadow: 1px 1px 5px black
+}
+
+.user-card:hover {
+    box-shadow: 3px 3px 20px #ffc107;
+}
+
+.user-email:hover{
+    transform: scale(1.05);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
