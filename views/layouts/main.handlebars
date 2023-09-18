@@ -22,15 +22,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="/recipes">View All Recipes</a>
-                </li>
                 <li class="nav-item">
                     {{#if logged_in}}
                     <a class="nav-link text-white" href="/profile">Your Profile</a>
                     {{else}}
-                    <a class="nav-link text-white" href="/signup">Create a User</a>
+                    <a class="nav-link text-white" href="/login">Log In</a>
                     {{/if}}
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="/recipes">View All Recipes</a>
                 </li>
                 <li class="nav-item"></li>
                 <li class="nav-item">
