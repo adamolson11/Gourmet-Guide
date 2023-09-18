@@ -48,10 +48,10 @@ body {
 
 }
 
-.recipe-card {
+.recipe-card, .recipe-profile-card  {
     text-align: center;
     box-shadow: 1px 1px 5px black;
-    text-shadow: 1px 1px 5px black
+    text-shadow: 1px 1px 5px black;
 }
 
 .recipe-card:hover {
@@ -62,6 +62,12 @@ body {
 .user-card {
     box-shadow: 2px 2px 15px black;
     text-shadow: 1px 1px 5px black
+}
+
+.user-recipe:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px black;
+    text-shadow: 1px 1px 20px #ffc107;
 }
 
 .user-card:hover {
