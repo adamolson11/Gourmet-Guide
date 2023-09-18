@@ -51,6 +51,7 @@ body {
 .recipe-card {
     text-align: center;
     box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px black
 }
 
 .recipe-card:hover {
@@ -59,7 +60,8 @@ body {
 }
 
 .user-card {
-    box-shadow: 2px 2px 15px black
+    box-shadow: 2px 2px 15px black;
+    text-shadow: 1px 1px 5px black
 }
 
 .user-card:hover {
