@@ -1,14 +1,14 @@
 <main class="container container-fluid mt-5">
 
-<h1 class="page-title">Current Users:</h1>
+<h1 class="page-title bg-secondary p-3 rounded border border-primary text-center">Current Users:</h1>
  
   {{#each users as |user| }}
-  <div class="row align-center mb-4 bg-secondary text-light rounded">
+  <div class="row align-center mb-4 bg-primary text-light rounded border border-warning user-card">
     <div class="col-md p-3">
       <h2>{{{get_emoji}}} {{user.username}}</h2>
     </div>
-    <div class="col-md">
-      <h3 class="text-light"><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
+    <div class="col-md p-3 user-email">
+      <h3 class="text-light user-email"><a class="text-decoration-none text-warning user-email" href="mailto:{{user.email}}">{{user.email}}</a></h3>
     </div>
   </div>
   {{/each}}

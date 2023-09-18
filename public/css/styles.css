@@ -57,3 +57,17 @@ body {
     transform: scale(1.1);
     box-shadow: 2px 2px 15px #ffc107
 }
+
+.user-card {
+    box-shadow: 2px 2px 15px black
+}
+
+.user-card:hover {
+    box-shadow: 3px 3px 20px #ffc107;
+}
+
+.user-email:hover{
+    transform: scale(1.05);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
