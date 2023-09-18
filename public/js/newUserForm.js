@@ -11,16 +11,13 @@ const nameChar = /[`!@#$%^&*()_\+=\[\]{};:"\\|,.<>\/?~0123456789]/
 
 formEl.addEventListener('submit', async e => {
     e.preventDefault()
-    
-    console.log(usernameEl, firstNameEl,lastNameEl, emailEl, passwordEl)
-    console.log(formEl)
 
     if (!usernameEl.value || !firstNameEl.value || !lastNameEl.value || !emailEl.value || !passwordEl.value) {
         alert('Fill out the entire form to continue')
         return
     }
     
-    const usernameTest = specChar.test(usernameEl.value)
+    const usernameTest = specChar.test(usernameEl.value.trim())
     //checks for special characters in username
     if (usernameTest) {
             alert("Username can only be letters and numbers")
@@ -34,8 +31,8 @@ formEl.addEventListener('submit', async e => {
         return
     }
 
-    const firstNameTest = nameChar.test(firstNameEl.value)
-    const lastNameTest = nameChar.test(lastNameEl.value)
+    const firstNameTest = nameChar.test(firstNameEl.value.trim())
+    const lastNameTest = nameChar.test(lastNameEl.value.trim())
     //checks if firstName and lastName are only letters 
     if (firstNameTest || lastNameTest) {
         alert("Name can only be letters")
@@ -65,11 +62,11 @@ formEl.addEventListener('submit', async e => {
         }
     
     const newUserData = {
-        username: usernameEl.value,
-        firstName: firstNameEl.value,
-        lastName: lastNameEl.value,
-        email: emailEl.value,
-        password: passwordEl.value
+        username: usernameEl.value.trim(),
+        firstName: firstNameEl.value.trim(),
+        lastName: lastNameEl.value.trim(),
+        email: emailEl.value.trim(),
+        password: passwordEl.value.trim()
     }
     try{
         const response = await fetch("/api/users/new-user", {
@@ -88,10 +85,10 @@ formEl.addEventListener('submit', async e => {
             alert(errorResponse.message)
           }
 
-          req.json(response)
+          res.json(response)
     }
     catch (err) {
-        req.status(500).json(err)
+        res.status(500).json(err)
     }
 
 })
