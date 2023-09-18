@@ -39,7 +39,6 @@ ingredientBtn.addEventListener('click', (e) => {
     nameDiv.removeChild(nameEl)
     amountDiv.removeChild(container)
   })
-
 })
 
 stepsBtn.addEventListener('click', (e) => {
