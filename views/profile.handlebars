@@ -1,15 +1,18 @@
-<div class="container my-1">
-   <div class="text-center"> <!-- this will center our username -->
-    <h2>{{username}}</h2>
-    {{#each recipes}}
-    <div class="card bg-white text-black mb-3">
-        <div class="card-body">
-            <a href="/recipe/{{this.id}}"> 
-            {{!-- this is the code that allows us to separate them into their own cards --}}
-                <h3>{{this.name}}</h3>
-            </a>
-            <p>{{this.description}}</p>
-        </div>
+<div style="--bs-bg-opacity: .70;" class="container my-1 bg-primary-subtle w-75 rounded-4">
+   <div class="text-center mb-3 p-5"> <!-- this will center our username -->
+        <h2>{{username}}'s Recipes</h2>
+   </div>
+ <div class="container text-center mb-5">
+    <div class="row d-flex justify-content-center">
+        {{#each recipes}}
+            <div class="col-5">
+                <a href="/recipe/{{id}}" class="text-decoration-none">
+                     <div class="card card-body col bg-primary bg-gradient text-light shadow">
+                        <h2 class="card-title">{{this.name}}</h2>
+                        <p class="card-text">{{this.description}}</p>
+                    </div>
+                </a>
+            </div>
+        {{/each}}
     </div>
-    {{/each}}
 </div>

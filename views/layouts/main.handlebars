@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/styles.css"> 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary"> 
-        <a class="navbar-brand text-white" href="/">Gourmet Guide</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient"> 
+        <a class="navbar-brand text-white ml-5" href="/">Gourmet Guide</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,36 +23,21 @@
                     <a class="nav-link text-white" href="/recipes">View All Recipes</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-white" href="/add-recipe">Add Your Recipe</a>
+                </li>
+                <li class="nav-item">
                    {{#if logged_in}}
                       <a class="nav-link text-white" href="/profile">Your Profile</a>
                     {{else}}
                       <a class="nav-link text-white" href="/signup">Create a User</a>
                     {{/if}}
                 </li>
-                <li class="nav-item"></li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/add-recipe">Add Your Recipe</a>
-                </li>
             </ul>
             
-            <div class="container text-center mx-auto" style="max-width: 400px;">
-                <form class="form-inline">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-success custom-search-btn" type="submit">Search</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+
+        {{> log-in-out}}
         </div>
     </nav>
-
-    {{#if logged_in}}
-    <div>
-        <button class="btn" id="logout">Logout</button>
-    </div>
-    {{/if}}
 
     <main class="wrapper mt-5">
         {{{ body }}}
