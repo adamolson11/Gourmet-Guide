@@ -2,13 +2,13 @@
    <div class="text-center"> <!-- this will center our username -->
     <h2 class="page-title title-card bg-secondary rounded border border-primary p-3">{{username}}</h2>
     {{#each recipes}}
-    <div class="card bg-white text-black mb-3">
-        <div class="card-body">
-            <a href="/recipe/{{this.id}}"> 
+    <div class="card bg-primary text-black mb-3">
+        <div class="card-body recipe-card">
+            <a class="text-decoration-none text-warning" href="/recipe/{{this.id}}"> 
             {{!-- this is the code that allows us to separate them into their own cards --}}
-                <h3>{{this.name}}</h3>
+                <h3 >{{this.name}}</h3>
             </a>
-            <p>{{this.description}}</p>
+            <p class="text-white">{{this.description}}</p>
         </div>
     </div>
     {{/each}}
