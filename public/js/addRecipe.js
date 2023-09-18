@@ -14,19 +14,31 @@ ingredientBtn.addEventListener('click', (e) => {
   e.preventDefault()
   const nameEl = document.createElement('input')
   const amountEl = document.createElement('input')
+  let deleteBtn = document.createElement('button')
+  let container= document.createElement('div')
+
+  container.classList.add('d-flex')
 
   nameEl.setAttribute('type', 'text')
   nameEl.classList.add('form-control', 'col', 'mt-1', 'ingredientName')
 
 
-
   amountEl.setAttribute('type', 'text')
   amountEl.classList.add('form-control', 'col', 'mt-1', 'amount')
 
+  deleteBtn.textContent= "-"
+  deleteBtn.classList.add('btn', 'btn-danger')
 
+  container.appendChild(amountEl)
+  container.appendChild(deleteBtn)
 
   nameDiv.appendChild(nameEl)
-  amountDiv.appendChild(amountEl)
+  amountDiv.appendChild(container)
+
+  deleteBtn.addEventListener('click', () => {
+    nameDiv.removeChild(amountEl)
+    amountDiv.removeChile(container)
+  })
 
 })
 
