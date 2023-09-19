@@ -47,11 +47,14 @@
     <script src="/js/logout.js"></script>
     {{/if}}
 
+    {{#if logged_in}}
+    <div></div>
+    {{else}}
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Sign up and share Recipes HERE!!!
     </button>
 
-    
+ 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -76,7 +79,7 @@
             </div>
         </div>
     </div>
-
+    {{/if}}
   <footer class="footer bg-primary text-center py-3"> 
     <div class="container">
         <div class="row">
