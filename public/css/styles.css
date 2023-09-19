@@ -77,6 +77,6 @@ nav a:hover {
     text-shadow: 1px 1px 15px white;
 }
 
-#user-form {
+#user-form, #new-recipe-form, .recipe-instruction {
     text-shadow: 1px 1px 5px black !important;
 }

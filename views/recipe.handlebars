@@ -1,20 +1,20 @@
 <div class="container mt-5">
     <div class="row">
         <main class="col-md-10 mx-auto bg-primary bg-graident text-white rounded-4 p-4 border">
-            <div class="border-bottom">
-            <h1>{{name}}</h1>
+            <div class="border-bottom recipe-instruction">
+            <h1 class="page-title-text">{{name}}</h1>
             <p>Posted by {{user.username}}</p>
             </div>
             <br>
-            <p>{{description}}</p>
-            <h2>Ingredients:</h2>
-            <ul>
+            <p class="recipe-instruction">{{description}}</p>
+            <h2 class="text-warning recipe-instruction">Ingredients:</h2>
+            <ul class="recipe-instruction">
                 {{#each ingredients}}
                     <li>{{this.ingredientName}} - {{this.ingredientAmount}}</li>
                 {{/each}}
             </ul>
-            <h2>Steps:</h2>
-            <ol class="">
+            <h2 class="text-warning recipe-instruction">Steps:</h2>
+            <ol class="recipe-instruction">
                 {{#each steps}}
                     <li>{{this.stepText}}</li>
                 {{/each}}
