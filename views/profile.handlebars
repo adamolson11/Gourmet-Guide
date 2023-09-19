@@ -1,14 +1,14 @@
-<div style="--bs-bg-opacity: .70;" class="container my-1 bg-primary-subtle w-75 rounded-4">
+<div style="--bs-bg-opacity: .70;" class="container my-1 bg-secondary border border-warning w-75 rounded-4">
    <div class="text-center mb-3 p-5"> <!-- this will center our username -->
-        <h2>{{username}}'s Recipes</h2>
+        <h2 class="page-title-text">{{username}}'s Recipes</h2>
    </div>
  <div class="container text-center mb-5">
     <div class="row d-flex justify-content-center">
         {{#each recipes}}
             <div class="col-5">
                 <a href="/recipe/{{id}}" class="text-decoration-none">
-                     <div class="card card-body col bg-primary bg-gradient text-light shadow">
-                        <h2 class="card-title">{{this.name}}</h2>
+                     <div class="card card-body col bg-primary bg-gradient text-light shadow recipe-card border border-warning">
+                        <h2 class="card-title text-warning ">{{this.name}}</h2>
                         <p class="card-text">{{this.description}}</p>
                     </div>
                 </a>

@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-center">
-    <div class="text-center bg-primary bg-gradient w-50 mb-5 p-4 rounded-4" style="--bs-bg-opacity: .90;">
-        <h1 class="text-light">All Recipes</h1>
+    <div class=" text-center bg-primary bg-gradient w-50 mb-5 p-4 rounded-4 border border-warning" style="--bs-bg-opacity: .90;">
+        <h1 class="text-light page-title-text">All Recipes</h1>
     </div>
 </div>
 <div class="container text-center">
@@ -8,8 +8,8 @@
         {{#each allRecipes}}
             <div class="col-6">
                 <a href="/recipe/{{id}}" class="text-decoration-none">
-                     <div class="card card-body col bg-primary bg-gradient text-light shadow">
-                        <h2 class="card-title">{{name}}</h2>
+                     <div class="card card-body col bg-primary bg-gradient text-light shadow recipe-card">
+                        <h2 class="card-title text-warning">{{name}}</h2>
                         <p class="card-text">{{description}}</p>
                     </div>
                 </a>
