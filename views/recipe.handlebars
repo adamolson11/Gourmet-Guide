@@ -8,13 +8,13 @@
             <br>
             <p class="recipe-instruction">{{description}}</p>
             <h2 class="text-warning recipe-instruction">Ingredients:</h2>
-            <ul class="recipe-instruction">
+            <ul>
                 {{#each ingredients}}
                     <li>{{this.ingredientName}} - {{this.ingredientAmount}}</li>
                 {{/each}}
             </ul>
             <h2 class="text-warning recipe-instruction">Steps:</h2>
-            <ol class="recipe-instruction">
+            <ol>
                 {{#each steps}}
                     <li>{{this.stepText}}</li>
                 {{/each}}
