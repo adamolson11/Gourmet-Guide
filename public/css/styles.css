@@ -1,4 +1,8 @@
 /* Add your CSS rules here */
+:root {
+    --warning: #FFC107;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -9,10 +13,19 @@ body {
     background-attachment: fixed;
 }
 
+nav a {
+    text-shadow: 1px 1px 5px black;
+}
+
 nav :hover {
     text-decoration: none;
 }
 
+nav a:hover {
+    transform: scale(1.1);
+    text-shadow: 1px 1px 5px black;
+    text-shadow: 3px 3px 15px var(--warning);
+}
 
 .wrapper {
     min-height: 100vh;
@@ -37,3 +50,33 @@ nav :hover {
     color: #ffffff;
 }
 
+.page-title-text {
+    color: var(--warning) !important;
+    font-size: 300%;
+    text-shadow: 1px 1px 5px black;
+}
+
+.page-title-card {
+    border-style: 1px 1px solid var(--warning) !important;
+    
+}
+
+.recipe-card {
+    border-style: 1px 1px solid var(--warning) !important;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 2px 2px 10px black;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px var(--warning) !important;
+    text-shadow: 1px 1px 10px blue;
+}
+
+#sign-up-here-link:hover {
+    text-shadow: 1px 1px 15px white;
+}
+
+#user-form {
+    text-shadow: 1px 1px 5px black !important;
+}
