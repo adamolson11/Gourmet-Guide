@@ -7,13 +7,13 @@
             </div>
             <br>
             <p class="">{{description}}</p>
-            <h2 class="text-warning recipe-instruction">Ingredients:</h2>
+            <h2 class="text-warning">Ingredients:</h2>
             <ul>
                 {{#each ingredients}}
                     <li>{{this.ingredientName}} - {{this.ingredientAmount}}</li>
                 {{/each}}
             </ul>
-            <h2 class="text-warning recipe-instruction">Steps:</h2>
+            <h2 class="text-warning">Steps:</h2>
             <ol>
                 {{#each steps}}
                     <li>{{this.stepText}}</li>
