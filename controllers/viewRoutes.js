@@ -101,8 +101,10 @@ router.get('/signup', async (req, res) => {
 
 router.get('/add-recipe', (req, res) => {
   const userId = req.session.user_id
-  if (!userId || userId === null ) {
+  console.log(userId)
+  if (!userId) {
     res.redirect('/login')
+    return
   }
   try {
     res.render('add-recipe',
