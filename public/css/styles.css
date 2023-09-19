@@ -65,7 +65,7 @@ nav a:hover {
 .recipe-card:hover {
     transform: scale(1.05);
     box-shadow: 3px 3px 15px grey !important;
-    text-shadow: 1px 1px 30px darkblue;
+    text-shadow: 1px 1px 5px black, 2px 2px 30px darkblue;
     border: 2px solid orange !important;
 }
 
