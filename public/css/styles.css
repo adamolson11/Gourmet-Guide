@@ -69,7 +69,7 @@ nav a:hover {
 
 .recipe-card:hover {
     transform: scale(1.05);
-    box-shadow: 3px 3px 15px black !important;
+    box-shadow: 3px 3px 15px grey !important;
     text-shadow: 1px 1px 30px var(--warning);
 }
 
