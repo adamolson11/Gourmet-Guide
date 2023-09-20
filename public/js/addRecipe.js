@@ -27,7 +27,7 @@ ingredientBtn.addEventListener('click', (e) => {
   amountEl.classList.add('form-control', 'col', 'mt-1', 'shadow', 'amount')
 
   deleteBtn.textContent= "-"
-  deleteBtn.classList.add('btn', 'btn-danger', 'm-1')
+  deleteBtn.classList.add('btn', 'btn-danger', 'mt-1')
 
   container.appendChild(amountEl)
   container.appendChild(deleteBtn)
@@ -52,7 +52,7 @@ stepsBtn.addEventListener('click', (e) => {
   stepEl.classList.add('form-control', 'mt-1', 'shadow', 'steps')
 
   deleteBtn.textContent= "-"
-  deleteBtn.classList.add('btn', 'btn-danger', 'm-1')
+  deleteBtn.classList.add('btn', 'btn-danger', 'mt-1')
 
   container.classList.add('d-flex')
   container.appendChild(stepEl)

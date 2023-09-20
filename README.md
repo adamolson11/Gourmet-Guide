@@ -25,12 +25,14 @@ https://gourmet-guide11-85962ead4ef2.herokuapp.com/
 
 ## Features
 
--Home page upon first open<br>
+-Access the home page upon first open with a welcome message<br>
 -Ability to create new recipes or view all created ones<br>
 -Ability to add and remove additional steps and ingredients when creating a recipe<br>
 -Allows creation of a new user and the ability to log in<br>
 -Must be logged in to create a recipe<br>
--Includes a star rating system for the recipes
+-Includes a star rating system for the recipes<br>
+-Includes helmet package to prevent common hacking strageties<br>
+-Includes a modal prompting non logged in users to create an account
 
 ## Documentation
 
@@ -39,6 +41,7 @@ N/A
 Screenshot:
 
 ![image](https://github.com/adamolson11/Gourmet-Guide/assets/123577761/a7d884d3-49e4-4d49-918a-ec28be580d10)
+
 ## Contributing
 
 This is a homework assignment, so no pull requests will be accepted except those by university and approved staff
