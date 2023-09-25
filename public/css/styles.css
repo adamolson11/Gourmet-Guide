@@ -76,3 +76,15 @@ nav a:hover {
 #user-form, #new-recipe-form, .recipe-instruction {
     text-shadow: 1px 1px 5px black !important;
 }
+
+@media (max-width: 990px) {
+
+    nav a {
+    margin-left: 25px;
+    }
+
+    nav a:hover {
+        transform: scale(1.0);
+    }
+  }
+  
