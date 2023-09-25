@@ -10,3 +10,9 @@ const signupBtn = document.getElementById('modal-signup-btn')
 signupBtn.addEventListener('click', () => {
   window.location.href= '/signup'
 })
+
+const testBtn = document.getElementById('test-button')
+
+testBtn.addEventListener('click', () => {
+  console.log('event')
+})
