@@ -54,6 +54,7 @@ nav a:hover {
     color: var(--warning) !important;
     font-size: 300%;
     text-shadow: 1px 1px 5px black;
+    word-wrap: break-word;
 }
 
 
